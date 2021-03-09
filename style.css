@@ -1,0 +1,213 @@
+:root {
+  --black-color: rgb(0, 0, 0);
+  --white-color: rgb(255, 255, 255);
+  --blue-color: rgb(12, 12, 218);
+  --skyblue-color: rgb(36, 82, 248);
+  --darkgray-color: rgb(64, 63, 63);
+  --rightgray-color: rgb(152, 152, 152);
+  --red-color: rgb(255, 0, 0);
+
+  --large-font: 24px;
+  --midium-font: 20px;
+  --small-font: 16px;
+  --minimum-font: 12px;
+
+  --padding: 12px;
+}
+
+a {
+  text-decoration: none;
+}
+ul {
+  list-style: none;
+}
+* {
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  background-color: var(--black-color);
+  color: var(--white-color);
+  font-size: var(--large-font);
+  padding: var(--padding);
+  align-items: center;
+}
+.titleIcon > ul > li {
+  padding: calc(var(--padding) / 2);
+}
+.titleIcon > ul > li > i {
+  color: var(--red-color);
+}
+header ul {
+  display: flex;
+}
+
+.titleIcon2 > ul > li {
+  padding: calc(var(--padding) / 2);
+}
+
+.movie {
+  background-color: var(--black-color);
+  position: sticky;
+  top: 0;
+  text-align: center;
+}
+
+.movie video {
+  height: 100%;
+  width: 100%;
+  max-width: 500px;
+  outline: none;
+  border: none;
+}
+
+.title .Hash {
+  display: flex;
+  padding: calc(var(--padding) / 2);
+  color: var(--blue-color);
+  font-size: var(--minimum-font);
+  padding-bottom: 0;
+}
+
+.title .Hash li {
+  padding: var(--padding);
+}
+
+.titleWrite {
+  display: flex;
+  padding: 0 var(--padding);
+}
+
+.titleWrite ul li:first-child {
+  font-size: var(--midium-font);
+  padding: calc(var(--padding) / 2);
+  text-overflow: clip;
+  text-overflow: ellipsis;
+  text-overflow: string;
+  color: var(--black-color);
+  font-weight: bold;
+}
+
+.titleWrite ul li:last-child {
+  font-size: var(--minimum-font);
+  color: var(--rightgray-color);
+  padding: calc(var(--padding) / 2);
+}
+
+.titleWrite button {
+  border: 0;
+  outline: 0;
+  text-decoration: none;
+  cursor: pointer;
+  background-color: white;
+  height: 100%;
+  padding: calc(var(--padding) / 2);
+}
+
+hr {
+  color: var(--rightgray-color);
+}
+
+.titlebtn {
+  display: flex;
+  justify-content: space-around;
+  padding: var(--padding);
+  color: var(--darkgray-color);
+  margin: var(--padding);
+}
+
+.titlebtn ul:first-child {
+  color: var(--blue-color);
+}
+
+.titlebtn ul li i {
+  padding-bottom: var(--padding);
+  font-size: 20px;
+}
+.titlebtn ul li {
+  font-size: 12px;
+}
+
+.titlebtn ul .what {
+  padding-left: 8px;
+}
+
+.titleprofile {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.titleprofile .picuter {
+  display: flex;
+
+  align-items: center;
+}
+
+.titleprofile .picuter img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  padding: var(--padding);
+}
+
+.titleprofile .picuter ul {
+  padding: var(--padding);
+}
+
+.titleprofile .picuter ul li:first-child {
+  font-size: var(--small-font);
+  font-weight: bold;
+}
+
+.titleprofile .sub li {
+  font-size: var(--small-font);
+  font-weight: bold;
+  color: var(--rightgray-color);
+}
+.titleprofile .picuter ul li:last-child {
+  color: var(--rightgray-color);
+}
+
+.movielist > li {
+  padding: 0 var(--padding);
+  color: var(--rightgray-color);
+}
+.movielist li {
+  list-style: none;
+}
+
+.movielist .movielistbylist li:first-child {
+  font-weight: bold;
+}
+
+.movielist .movielistbylist .title {
+  color: var(--rightgray-color);
+}
+.movielist div {
+  display: flex;
+  padding-top: var(--padding);
+}
+.movielist div button {
+  border: 0;
+  outline: 0;
+  text-decoration: none;
+  cursor: pointer;
+  background-color: white;
+  height: 100%;
+  padding: calc(var(--padding) / 2);
+  padding-top: var(--padding);
+}
+
+.movielist div img {
+  width: 250px;
+  height: 150px;
+  padding: 0 var(--padding);
+}
+
+.movielist .movielistbylist {
+  display: flex;
+  justify-content: space-between;
+}
